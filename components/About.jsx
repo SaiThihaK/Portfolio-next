@@ -16,12 +16,14 @@ Despite the fact that I am most skilled at creating front-end applications using
 I think that using the best tool for the job, rather than sticking to one particular language, is what makes a great developer. 
             </p>
             <p className='py-2 text-gray-600'>
-            Since 2021, I've been studying programming.
+            Since 2021, I&apos;ve been studying programming.
 I have first-hand experience managing and designing projects at the production level. 
             </p>
+            <Link href="/#projects">
             <p
             className='text-gray-600 underline cursor-pointer'
             >Please check out my latest projects</p>
+            </Link>
            </div>
            <div className=' cursor-pointer
            p-4

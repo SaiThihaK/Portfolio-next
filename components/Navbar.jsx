@@ -24,7 +24,7 @@ useEffect(()=>{
 },[])
 
   return (
-<div className={shadow ? 'fixed h-20 w-full z-[100] py-2 shadow-md shadow-gray-400':'fixed h-20 w-full z-[100] py-2'}>
+<div className={shadow ? 'fixed h-20 w-full z-[100] py-2 shadow-md shadow-gray-400':'fixed h-20 w-full z-[100] py-2 bg-[white]'}>
   <div className="flex  justify-between items-center w-full h-full px-2 2xl:px-16">
     <Link href="/">
     <Image src={Navlogo} alt="logo" width={80} height={80} />
@@ -81,7 +81,7 @@ useEffect(()=>{
     
     </div>
     <div className='border-b border-gray-300 '>
-    <p className='w-[85%] md:w-[90%] py-3'>Let's build your dream with me</p>
+    <p className='w-[85%] md:w-[90%] py-3'>Let&apos;s build your dream with me</p>
     </div>
    <div className='py-4 flex flex-col'>
    <ul className='uppercase'>
@@ -113,15 +113,19 @@ useEffect(()=>{
    </ul>
    </div>
    <div className='uppercase pt-10 text-[#5651e5] tracking-widest'>
-    <p>Let's Connect</p>
+    <p>Let&apos;s Connect</p>
    </div>
    <div className='flex justify-between py-4 w-full md:w-[50%]'>
+    <Link href="https://www.linkedin.com/in/sai-thiha-kyaw-24b2a8225/">
    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:scale-105 ease-in duration-100'>
    <FaLinkedinIn />
    </div>
+    </Link>
+    <Link href="https://github.com/SaiThihaK">
    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:scale-105 ease-in duration-100'>
    <FaGithub />
    </div>
+    </Link>
    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:scale-105 ease-in duration-100'>
    <AiOutlineMail />
    </div>
