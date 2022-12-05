@@ -22,7 +22,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className='h-screen w-full'>
+    <div className='h-screen w-full' id='projects'>
     <div className='h-full max-w-[1280px] p-6'>
     <div>
         <p className='uppercase text-[#5657e6] mx-auto mt-8'>Projects</p>

@@ -4,7 +4,7 @@ import PhotoAbout from '../public/assets/about.jpg'
 
 const About = () => {
   return (
-    <div className='w-full md:h-screen flex items-center py-16 p-2'>
+    <div id="about" className='w-full md:h-screen flex items-center py-16 p-2'>
         <div className='max-w-[1280px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
             <p className='text-xl text-[#5651e5] py-2 tracking-widest'>About</p>

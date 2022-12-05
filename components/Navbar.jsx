@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai"
 import {FaGithub, FaLinkedinIn} from "react-icons/fa"
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -8,36 +8,52 @@ import Navlogo from "../public/logo.svg"
 
 const Navbar = () => {
 const [nav,setNav] = useState(false);
+const [shadow,setShadow] = useState(true);
+const shadowHandler = ()=>{
+    if(window.scrollY >= 90){
+        setShadow(true)
+    }else{
+        setShadow(false);
+    }
+}
 const handleNav = ()=>setNav(!nav);
+
+
+useEffect(()=>{
+    window.addEventListener("scroll",shadowHandler)
+},[])
+
   return (
-<div className='fixed h-20 w-full z-[100] py-2 shadow-md shadow-gray-400'>
+<div className={shadow ? 'fixed h-20 w-full z-[100] py-2 shadow-md shadow-gray-400':'fixed h-20 w-full z-[100] py-2'}>
   <div className="flex  justify-between items-center w-full h-full px-2 2xl:px-16">
-{/* Need Image Logo */}
-<Image src={Navlogo} alt="logo" width={80} height={80} />
+    <Link href="/">
+    <Image src={Navlogo} alt="logo" width={80} height={80} />
+    </Link>
+
  <div>
     <ul className='hidden md:flex'>
         <Link href="/"> 
-        <li className='ml-10 text-sm uppercase hover:border-b '>
+        <li className='ml-10 text-sm uppercase'>
             Home
         </li>
         </Link>
-        <Link href="/"> 
-        <li className='ml-10 hover:border-b text-sm uppercase'>
+        <Link href="/#about"> 
+        <li className='ml-10  text-sm uppercase'>
             About
         </li>
         </Link>
-        <Link href="/"> 
-        <li className='ml-10 hover:border-b text-sm uppercase'>
+        <Link href="/#skills"> 
+        <li className='ml-10  text-sm uppercase'>
             Skills
         </li>
         </Link>
-        <Link href="/"> 
-        <li className='ml-10 hover:border-b text-sm uppercase'>
+        <Link href="/#projects"> 
+        <li className='ml-10  text-sm uppercase'>
             Projects
         </li>
         </Link>
-        <Link href="/"> 
-        <li className='ml-10 hover:border-b text-sm uppercase'>
+        <Link href="/#contact"> 
+        <li className='ml-10  text-sm uppercase'>
          Contact
         </li>
         </Link>
@@ -74,22 +90,22 @@ const handleNav = ()=>setNav(!nav);
         Home
     </li>
     </Link>
-    <Link href="/">
+    <Link href="/#about">
     <li className='text-sm py-4'>
         About
     </li>
     </Link>
-    <Link href="/">
+    <Link href="/#skills">
     <li className='text-sm py-4'>
         Skill
     </li>
     </Link>
-    <Link href="/">
+    <Link href="/#projects">
     <li className='text-sm py-4'>
         Project
     </li>
     </Link>
-    <Link href="/">
+    <Link href="/contacts">
     <li className='text-sm py-4'>
         Contact
     </li>
