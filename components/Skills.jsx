@@ -22,7 +22,7 @@ const skillset = [
 {img:node,name:"Node"},
 ];
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen' id="skills">
     <div className='max-w-[1280px] h-full w-full p-6 flex flex-col justify-center '>
     <p className='text-lg text-[#5651e5] tracking-widest'>SKILLS</p>
     <h2 className='py-2'>What I Can Do</h2>

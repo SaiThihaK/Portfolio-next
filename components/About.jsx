@@ -4,7 +4,7 @@ import PhotoAbout from '../public/assets/about.jpg'
 
 const About = () => {
   return (
-    <div className='w-full md:h-screen flex items-center py-16 p-2'>
+    <div id="about" className='w-full md:h-screen flex items-center py-16 p-2'>
         <div className='max-w-[1280px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
             <p className='text-xl text-[#5651e5] py-2 tracking-widest'>About</p>
@@ -16,12 +16,14 @@ Despite the fact that I am most skilled at creating front-end applications using
 I think that using the best tool for the job, rather than sticking to one particular language, is what makes a great developer. 
             </p>
             <p className='py-2 text-gray-600'>
-            Since 2021, I've been studying programming.
+            Since 2021, I&apos;ve been studying programming.
 I have first-hand experience managing and designing projects at the production level. 
             </p>
+            <Link href="/#projects">
             <p
             className='text-gray-600 underline cursor-pointer'
             >Please check out my latest projects</p>
+            </Link>
            </div>
            <div className=' cursor-pointer
            p-4
