@@ -105,7 +105,7 @@ useEffect(()=>{
         Project
     </li>
     </Link>
-    <Link href="/contacts">
+    <Link href="/#contacts">
     <li className='text-sm py-4'>
         Contact
     </li>
