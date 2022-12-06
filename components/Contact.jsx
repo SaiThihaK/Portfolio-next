@@ -9,17 +9,17 @@ import {HiOutlineChevronDoubleUp} from "react-icons/hi"
 import contactImage from "../public/assets/contact.jpg"
 const Contact = () => {
   return (
-    <div id="contact" className='w-full lg:h-screen p-8'>
-    <div className='w-full max-w-[1280px] h-full p-6'>
+    <div id="contact" className='w-full lg:h-screen p-4 lg:mt-0'>
+    <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
     <p className='uppercase py-6 text-[#5657e5]'>Contact</p>
     <h2 className='tracking-wider'>Get In Touch</h2>
-    <div className='grid grid-cols-5 gap-8'>
+    <div className='grid md:grid-cols-5 gap-8'>
 {/* left */}
-<div className='col-span-3 lg:col-span-2 shadow-lg rounded shadow-gray-400 p-4'>
-<div className="lg:p-4 h-full flex flex-col">
+<div className='col-span-3 mt-3  w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 md:col-span-2'>
+<div className="p-4 h-full flex flex-col">
 <Image src={contactImage} alt="/"  className='rounded-xl hover:scale-105 ease-in duration-300' />
             <div>
-                <h2 className='py-2'>Sai Thiha Kyaw</h2>
+                <h2 className='py-2'>Sai Thiha</h2>
                 <p>Front-End Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
@@ -49,7 +49,7 @@ const Contact = () => {
 </div>
 
 {/* Right */}
-<div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+<div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl p-4'>
 <div className='py-4'>
 <form>
 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
